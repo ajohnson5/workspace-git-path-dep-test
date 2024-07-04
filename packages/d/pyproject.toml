@@ -1,0 +1,11 @@
+[project]
+name = "d"
+version = "1.0.0"
+dependencies = [
+    "anyio>=4.0.0,<5"
+]
+requires-python = ">=3.12"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
