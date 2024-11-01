@@ -1,11 +1,14 @@
 [project]
 name = "d"
-version = "1.0.0"
+dynamic=["version"]
 dependencies = [
     "anyio>=4.0.0,<5"
 ]
-requires-python = ">=3.12"
+requires-python = ">=3.11"
 
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
+
+[tool.hatch.version]
+path = "../../__about__.py"
